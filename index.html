@@ -40,6 +40,7 @@
     .eyebrow:before { content: ""; width: 18px; height: 3px; background: var(--blue); border-radius: 10px; }
     h1 { font-size: clamp(42px, 5vw, 70px); letter-spacing: -.06em; line-height: 1.035; margin: 20px 0 20px; font-weight: 800; }
     h1 span { color: var(--blue); }
+    h1 .surname { display: inline-block; white-space: nowrap; font-size: .88em; }
     .lead { max-width: 540px; color: var(--muted); font-size: clamp(16px, 1.55vw, 18px); line-height: 1.66; margin: 0; }
     .cta { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 29px; }
     .btn { min-height: 45px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 12px 19px; border: 1px solid var(--line); border-radius: 9px; background: var(--white); color: var(--ink); font-size: 13px; font-weight: 750; text-decoration: none; transition: transform .15s ease, background .15s ease, border-color .15s ease; }
@@ -100,7 +101,7 @@
     <section class="wrap hero" aria-labelledby="hero-title">
       <div>
         <div class="eyebrow">Mechanical Engineering · Spring 2027</div>
-        <h1 id="hero-title">Arturo Rangel<br><span>Alvarez.</span></h1>
+        <h1 id="hero-title">Arturo<br><span class="surname">Rangel&nbsp;Alvarez</span></h1>
         <p class="lead">Engineering portfolio spanning hands-on manufacturing, process improvement, tooling design, and CAD assembly—from the shop floor to detailed mechanical systems.</p>
         <div class="cta">
           <a class="btn primary" href="#portfolio">
