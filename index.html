@@ -35,7 +35,7 @@
     .identity-sub { font-size: 11px; color: var(--muted); font-weight: 550; margin-top: 3px; }
     .nav-link { text-decoration: none; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
     .nav-link:hover { color: var(--blue); }
-    .hero { padding-block: 72px 68px; display: grid; grid-template-columns: 1fr .98fr; align-items: center; gap: clamp(28px, 5vw, 70px); }
+    .hero { padding-block: 72px 68px; }
     .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
     .eyebrow:before { content: ""; width: 18px; height: 3px; background: var(--blue); border-radius: 10px; }
     h1 { font-size: clamp(42px, 5vw, 70px); letter-spacing: -.06em; line-height: 1.035; margin: 20px 0 20px; font-weight: 800; }
@@ -50,13 +50,6 @@
     .factline { display: flex; flex-wrap: wrap; gap: 9px 21px; margin-top: 27px; color: var(--muted); font-size: 12px; font-weight: 600; }
     .factline span { display: inline-flex; align-items: center; gap: 8px; }
     .factline .dot { width: 5px; height: 5px; border-radius: 100%; background: #3b81c2; }
-    .project-visual { position: relative; display: block; background: #e3e8ec; border: 1px solid #d9e0e7; border-radius: 17px; overflow: hidden; box-shadow: 0 20px 45px rgba(22,38,60,.11); text-decoration: none; }
-    .project-visual img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; transition: transform .25s ease; }
-    .project-visual:hover img { transform: scale(1.025); }
-    .project-caption { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 15px 18px; background: #fff; }
-    .project-caption strong { display: block; font-size: 13px; }
-    .project-caption small { display: block; font-size: 11px; color: var(--muted); margin-top: 4px; }
-    .project-caption .arrow { color: var(--blue); font-size: 20px; line-height: 1; }
     .document-section { border-top: 1px solid var(--line); padding-block: 43px 74px; }
     .document-head { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 17px; margin-bottom: 19px; }
     .document-head h2 { font-size: clamp(25px, 3vw, 34px); letter-spacing: -.04em; margin: 0 0 7px; }
@@ -71,8 +64,7 @@
     .foot { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); }
     .foot a { font-weight: 750; text-decoration: none; color: var(--blue); }
     @media (max-width: 850px) {
-      .hero { grid-template-columns: 1fr; padding-block: 53px 50px; gap: 38px; }
-      .project-visual { max-width: 700px; }
+      .hero { padding-block: 53px 50px; }
       .document-frame { height: 650px; }
     }
     @media (max-width: 600px) {
@@ -84,7 +76,6 @@
       .hero { padding-block: 47px 43px; }
       h1 { font-size: clamp(42px, 10.6vw, 58px); }
       .btn { flex: 1 1 auto; }
-      .project-visual { border-radius: 12px; }
       .document-section { padding-block: 35px 52px; }
       .document-shell { padding: 7px; }
       .document-frame { height: 480px; min-height: 0; }
@@ -126,10 +117,6 @@
           <span><i class="dot" aria-hidden="true"></i>NCAA Division I Athlete</span>
         </div>
       </div>
-      <a class="project-visual" href="portfolio.pdf#page=7" target="_blank" rel="noopener" aria-label="View the twin-turbo V6 SolidWorks engine project on page 7 of the portfolio">
-        <img src="engine-preview.png" alt="Portfolio slide showing three views of Arturo's twin-turbo V6 engine modeled and assembled in SolidWorks" width="1600" height="900">
-        <span class="project-caption"><span><strong>Featured project — Twin-Turbo V6</strong><small>SolidWorks modeling & mechanical assembly · Portfolio page 7</small></span><span class="arrow" aria-hidden="true">↗</span></span>
-      </a>
     </section>
 
     <section id="portfolio" class="document-section" aria-labelledby="portfolio-title">
