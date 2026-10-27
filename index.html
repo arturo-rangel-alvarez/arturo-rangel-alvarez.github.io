@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arturo Rangel Alvarez — mechanical engineering portfolio featuring manufacturing process improvements, tooling, CAD, and mechanical assembly.">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta property="og:title" content="Arturo Rangel Alvarez | Engineering Portfolio">
+  <meta property="og:description" content="Manufacturing engineering, tooling, and mechanical design projects. Explore the portfolio or download the PDF.">
+  <meta property="og:type" content="website">
+  <title>Arturo Rangel Alvarez | Engineering Portfolio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172337;
+      --muted: #586576;
+      --line: #dce2e8;
+      --paper: #f5f6f8;
+      --white: #ffffff;
+      --blue: #174c91;
+      --blue-dark: #113b71;
+      --blue-light: #eaf1fa;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #69a4ed; outline-offset: 4px; border-radius: 4px; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topbar { background: rgba(255,255,255,.93); border-bottom: 1px solid var(--line); }
+    .topbar-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .identity { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .monogram { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 9px; background: var(--ink); color: #fff; font-weight: 800; letter-spacing: -.08em; padding-right: 2px; font-size: 18px; }
+    .identity-label { font-size: 13px; font-weight: 750; line-height: 1.25; }
+    .identity-sub { font-size: 11px; color: var(--muted); font-weight: 550; margin-top: 3px; }
+    .nav-link { text-decoration: none; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .nav-link:hover { color: var(--blue); }
+    .hero { padding-block: 72px 68px; display: grid; grid-template-columns: 1fr .98fr; align-items: center; gap: clamp(28px, 5vw, 70px); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    .eyebrow:before { content: ""; width: 18px; height: 3px; background: var(--blue); border-radius: 10px; }
+    h1 { font-size: clamp(42px, 5vw, 70px); letter-spacing: -.06em; line-height: 1.035; margin: 20px 0 20px; font-weight: 800; }
+    h1 span { color: var(--blue); }
+    .lead { max-width: 540px; color: var(--muted); font-size: clamp(16px, 1.55vw, 18px); line-height: 1.66; margin: 0; }
+    .cta { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 29px; }
+    .btn { min-height: 45px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 12px 19px; border: 1px solid var(--line); border-radius: 9px; background: var(--white); color: var(--ink); font-size: 13px; font-weight: 750; text-decoration: none; transition: transform .15s ease, background .15s ease, border-color .15s ease; }
+    .btn:hover { transform: translateY(-2px); border-color: #a6b7ca; }
+    .btn.primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .btn.primary:hover { background: var(--blue-dark); }
+    .btn svg { width: 17px; height: 17px; stroke-width: 2; flex: none; }
+    .factline { display: flex; flex-wrap: wrap; gap: 9px 21px; margin-top: 27px; color: var(--muted); font-size: 12px; font-weight: 600; }
+    .factline span { display: inline-flex; align-items: center; gap: 8px; }
+    .factline .dot { width: 5px; height: 5px; border-radius: 100%; background: #3b81c2; }
+    .project-visual { position: relative; display: block; background: #e3e8ec; border: 1px solid #d9e0e7; border-radius: 17px; overflow: hidden; box-shadow: 0 20px 45px rgba(22,38,60,.11); text-decoration: none; }
+    .project-visual img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; transition: transform .25s ease; }
+    .project-visual:hover img { transform: scale(1.025); }
+    .project-caption { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 15px 18px; background: #fff; }
+    .project-caption strong { display: block; font-size: 13px; }
+    .project-caption small { display: block; font-size: 11px; color: var(--muted); margin-top: 4px; }
+    .project-caption .arrow { color: var(--blue); font-size: 20px; line-height: 1; }
+    .document-section { border-top: 1px solid var(--line); padding-block: 43px 74px; }
+    .document-head { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 17px; margin-bottom: 19px; }
+    .document-head h2 { font-size: clamp(25px, 3vw, 34px); letter-spacing: -.04em; margin: 0 0 7px; }
+    .document-head p { font-size: 13px; color: var(--muted); margin: 0; }
+    .document-tools { display: flex; flex-wrap: wrap; gap: 10px; }
+    .document-tools a { color: var(--blue); font-size: 12px; font-weight: 750; text-decoration: none; }
+    .document-tools a:hover { text-decoration: underline; }
+    .document-shell { background: #e3e7ec; border: 1px solid #d7dee6; border-radius: 14px; padding: 11px; box-shadow: 0 15px 35px rgba(22,38,60,.08); }
+    .document-frame { display: block; width: 100%; height: min(76vw, 800px); min-height: 430px; background: #fff; border: 0; border-radius: 6px; }
+    .mobile-note { display: none; }
+    footer { border-top: 1px solid var(--line); background: #fff; }
+    .foot { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); }
+    .foot a { font-weight: 750; text-decoration: none; color: var(--blue); }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; padding-block: 53px 50px; gap: 38px; }
+      .project-visual { max-width: 700px; }
+      .document-frame { height: 650px; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 34px, 1160px); }
+      .topbar-inner { min-height: 66px; }
+      .identity-label { font-size: 12px; }
+      .identity-sub { font-size: 10px; }
+      .nav-link { font-size: 11px; }
+      .hero { padding-block: 47px 43px; }
+      h1 { font-size: clamp(42px, 10.6vw, 58px); }
+      .btn { flex: 1 1 auto; }
+      .project-visual { border-radius: 12px; }
+      .document-section { padding-block: 35px 52px; }
+      .document-shell { padding: 7px; }
+      .document-frame { height: 480px; min-height: 0; }
+      .mobile-note { display: block; font-size: 12px; color: var(--muted); line-height: 1.55; margin: 12px 4px 0; }
+      .foot { padding-block: 18px; flex-direction: column; align-items: flex-start; min-height: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *:before, *:after { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="identity" href="#top" aria-label="Back to top">
+        <span class="monogram" aria-hidden="true">AR</span>
+        <span><span class="identity-label">ARTURO RANGEL ALVAREZ</span><br><span class="identity-sub">Engineering Portfolio</span></span>
+      </a>
+      <a class="nav-link" href="portfolio.pdf" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow">Mechanical Engineering · Spring 2027</div>
+        <h1 id="hero-title">Arturo Rangel<br><span>Alvarez.</span></h1>
+        <p class="lead">Engineering portfolio spanning hands-on manufacturing, process improvement, tooling design, and CAD assembly—from the shop floor to detailed mechanical systems.</p>
+        <div class="cta">
+          <a class="btn primary" href="#portfolio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+            View Portfolio
+          </a>
+          <a class="btn" href="portfolio.pdf" download="Arturo_Rangel_Alvarez_Portfolio.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 17v3h14v-3"/></svg>
+            Download PDF
+          </a>
+        </div>
+        <div class="factline" aria-label="Background">
+          <span><i class="dot" aria-hidden="true"></i>University of Detroit Mercy</span>
+          <span><i class="dot" aria-hidden="true"></i>NCAA Division I Athlete</span>
+        </div>
+      </div>
+      <a class="project-visual" href="portfolio.pdf#page=7" target="_blank" rel="noopener" aria-label="View the twin-turbo V6 SolidWorks engine project on page 7 of the portfolio">
+        <img src="engine-preview.png" alt="Portfolio slide showing three views of Arturo's twin-turbo V6 engine modeled and assembled in SolidWorks" width="1600" height="900">
+        <span class="project-caption"><span><strong>Featured project — Twin-Turbo V6</strong><small>SolidWorks modeling & mechanical assembly · Portfolio page 7</small></span><span class="arrow" aria-hidden="true">↗</span></span>
+      </a>
+    </section>
+
+    <section id="portfolio" class="document-section" aria-labelledby="portfolio-title">
+      <div class="wrap">
+        <div class="document-head">
+          <div><h2 id="portfolio-title">Full Engineering Portfolio</h2><p>9 pages · Project objectives, approach, CAD, and results</p></div>
+          <div class="document-tools"><a href="portfolio.pdf" target="_blank" rel="noopener">Open in new tab ↗</a><a href="portfolio.pdf" download="Arturo_Rangel_Alvarez_Portfolio.pdf">Download ↓</a></div>
+        </div>
+        <div class="document-shell">
+          <iframe class="document-frame" src="portfolio.pdf#view=FitH" title="Arturo Rangel Alvarez — full engineering portfolio PDF" loading="eager"></iframe>
+        </div>
+        <p class="mobile-note">If the PDF doesn't display in your phone's browser, select “Open in new tab” above to view all nine pages.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap foot"><span>© 2026 Arturo Rangel Alvarez · Mechanical Engineering</span><a href="https://www.linkedin.com/in/arturo-rangel-alvarez-27522827b/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div></footer>
+</body>
+</html>
